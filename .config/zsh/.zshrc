@@ -12,7 +12,7 @@ export HISTFILE="$ZDOTDIR/.zsh_history"
 export ZSH="$HOME/.config/zsh/oh-my-zsh"
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$HOME/.local/spicetify:$HOME/.local/gem/ruby/2.6.0/bin"
 export PATH="$PATH:$HOME/.local/jetbrains/scripts:$HOME/.local/bin"
-export PATH="$PATH:/Users/cheezi/code/scripts/changelog:$HOME/.config/zsh/plugins/swissgit:$HOME/code/scripts"
+export PATH="$PATH:/Users/cheezi/code/scripts/changelog:$HOME/.config/zsh/plugins/swissgit:$HOME/code/scripts:$HOME/code/scripts/printcalcs"
 export PATH=$HOME/.docker/cli-plugins:$PATH
 export VIMINIT='source $HOME/.config/vim/vimrc'
 export GEM_HOME="$HOME/.local/share/gem"
@@ -52,6 +52,7 @@ alias cleanfiles='rm ~/Downloads/connect\(*\).rdp ~/Downloads/Personal-xlinsjo\(
 alias movetoshare="$HOME/.config/zsh/plugins/move_to_share.zsh"
 alias sas='mvn clean dept44-formatting:apply generate-sources'
 alias fmt='mvn clean dept44-formatting:apply'
+alias calcprint="$HOME/code/scripts/printcalcs/print.sh"
 compdef '_git' dotfiles
 
 # Custom Scripts
