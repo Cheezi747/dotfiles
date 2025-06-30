@@ -28,7 +28,13 @@ if command -v java &>/dev/null; then
 fi
 
 # Zsh Options
+export HISTSIZE=1000
+export SAVEHIST=2000
 setopt NO_NOTIFY
+setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_ignore_dups       # ignore duplicated commands history list
+setopt hist_ignore_space      # ignore commands that start with space
+setopt hist_verify            # show command with history expansion to user before running it
 unsetopt CHECK_JOBS MONITOR
 
 # Theme and Settings
