@@ -21,10 +21,10 @@ export GROOVY_HOME="$HOME/.local/share/groovy"
 export GNUPGHOME="$HOME/.local/share/gnupg"
 export PATH="/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 export HOMEBREW_NO_ENV_HINTS=1
-
+export JAVA_HOME="/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home"
 # Set java home to Java 21 if available
 if command -v java &>/dev/null; then
-    export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+    export JAVA_HOME=$(/usr/libexec/java_home -v 21)
 fi
 
 # Zsh Options
